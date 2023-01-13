@@ -1,7 +1,31 @@
-.border {
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#menu {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 16px;
+}
+
+#watches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 12px;
+  padding: 0 16px;
+}
+
+.watch {
   border-style: solid;
-  border-width: 1px;
-  margin: 4px;
+  border-width: 2px;
+  border-radius: 15px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .watch-on {
@@ -10,4 +34,21 @@
 
 .watch-off {
   color: red;
+}
+
+.editing {
+  font-style: italic;
+}
+
+.watch-text {
+  font-size: large;
+  font-weight: 500;
+}
+
+button {
+  font-size: 16px;
+}
+
+select {
+  font-size: 16px;
 }
