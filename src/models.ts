@@ -1,9 +1,9 @@
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 enum Mode {
   View,
   EditHour,
-  EditMinute
+  EditMinute,
 }
 
 class Watch {
@@ -22,4 +22,4 @@ class Watch {
   }
 }
 
-export {Watch, Mode}
+export { Watch, Mode };
