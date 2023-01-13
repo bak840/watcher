@@ -4,7 +4,8 @@ import { Controller } from "./controller";
 const controller = new Controller();
 
 function renderWatchesToHTML(): string {
-  let result = `<h2>${controller.watches.length} watche(s)</h2>`;
+  const suffix = controller.watches.length === 1 ? "watch" : "watches";
+  let result = `<h2>${controller.watches.length} ${suffix}</h2>`;
   controller.watches.forEach((w) => (result = result + renderWatchToHTML(w)));
   return result;
 }
