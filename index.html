@@ -15,16 +15,20 @@
 <body>
   <div id="app">
     <div id="menu">
-      <div id="title"></div>
-      <button id="clearButton">clear</button>
-      <button id="addButton">add</button>
-      <p>preset: </p>
-      <select id="newWatchSelect" name="newWatchTZ">
-        <option value="paris">Paris</option>
-        <option value="yaounde">Yaoundé</option>
-        <option value="dakar">Dakar</option>
-        <option value="la">Los Angeles</option>
-      </select>
+      <div class="menu-part">
+        <h2 id="title"></h2>
+        <button id="clearButton">clear</button>
+      </div>
+      <div class="menu-part">
+        <button id="addButton">add</button>
+        <p style="margin: 0;">preset: </p>
+        <select id="newWatchSelect" name="newWatchTZ">
+          <option value="paris">Paris</option>
+          <option value="yaounde">Yaoundé</option>
+          <option value="dakar">Dakar</option>
+          <option value="la">Los Angeles</option>
+        </select>
+      </div>
     </div>
     <div id="watches"></div>
   </div>

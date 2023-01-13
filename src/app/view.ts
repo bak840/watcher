@@ -10,7 +10,7 @@ class View {
 
   renderTitleToHTML(): string {
     const suffix = this.controller.watches.length === 1 ? "watch" : "watches";
-    return `<h2>${this.controller.watches.length} ${suffix}</h2>`;
+    return `${this.controller.watches.length} ${suffix}`;
   }
 
   renderWatchesToHTML(): string {
